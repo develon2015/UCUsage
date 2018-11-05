@@ -17,3 +17,11 @@ main(int argc, char **argv) {
 	}
 	return 0;
 }
+
+/**
+develon@Topmain:~/github/UCUsage$ a.out google.com youtube.com bbs.develon.club
+google.com:             172.217.161.174
+youtube.com:            172.217.161.174
+bbs.develon.club:               Unknown
+
+/*
