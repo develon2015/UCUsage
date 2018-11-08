@@ -24,4 +24,4 @@ google.com:             172.217.161.174
 youtube.com:            172.217.161.174
 bbs.develon.club:               Unknown
 
-/*
+*/
