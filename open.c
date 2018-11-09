@@ -13,7 +13,7 @@ main(int argc, char **argv) {
 	}
 	char buf[1024];
 	int n ;
-	while ((n = read(fd, buf, sizeof buf)) != 0) {
+	while ((n = read(fd, buf, sizeof buf - 1)) != 0) {
 		buf[n] = 0;
 		printf("%s", (char *)buf);
 	}
