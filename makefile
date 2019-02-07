@@ -1,10 +1,11 @@
-targets := *.c
+# 编译到bin目录下
+VPATH = bin
 
-bin/%: %.c
-	-$(CC) $^ -o $@ -lpthread
+%: %.c
+	-$(CC) $^ -o bin/$@ -lpthread
 
-makefile: bin bin/gnu_get_libc_version bin/opendir bin/pthread_create bin/open \
-	bin/pthread_cancel
+makefile: bin gnu_get_libc_version opendir pthread_create open \
+	pthread_cancel
 	@echo OK!
 
 bin:
