@@ -4,8 +4,8 @@ VPATH = bin
 %: %.c
 	-$(CC) $^ -o bin/$@ -lpthread -ldl
 
-makefile: bin gnu_get_libc_version opendir pthread_create open \
-	pthread_cancel dlopen libtest.so
+MultiTarget: bin gnu_get_libc_version opendir pthread_create open \
+	pthread_cancel dlopen libtest.so gethostbyname
 	@echo OK!
 
 bin:
